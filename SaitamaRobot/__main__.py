@@ -23,10 +23,10 @@ from telegram.utils.helpers import escape_markdown
 PM_START_TEXT = """
 
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
+I am group management bot From @pr_edit.
 You can find my list of available commands with /help.
 
-i'm a group manager bot. Maintained by @GarimaQueen
+i'm a group manager bot. Maintained by @conceptediting
 
 """
 
@@ -49,11 +49,11 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://images.alphacoders.com/679/679719.jpg"
+SAITAMA_IMG = "https://1.bp.blogspot.com/-dGHnc98xC-0/YEI9oDDM6II/AAAAAAAAAt4/BdZZSjol3m419cIkmALZ-bV9eSxzEJr7ACLcBGAsYHQ/s16000/carry.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars)."""
+There are two ways of supporting him; [PayPal](paypal.me/predit)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -156,8 +156,8 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([
-                  [InlineKeyboardButton(text="👸 Add Jassica to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
-                  [InlineKeyboardButton(text="Source Code", url="https://github.com/QueenArzoo/ElisaRobot"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")]]))
+                  [InlineKeyboardButton(text="👸 Add Carry to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
+                  [InlineKeyboardButton(text="Youtube Support", url="https://www.youtube.com/channel/UCQ75HMDuboeXg59Aa7wicMg"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")]]))
     else:
         update.effective_message.reply_text("Yo, whadup?")
 
